@@ -1,13 +1,14 @@
 import React from "react";
-import { AiOutlineSearch } from 'react-icons/ai';
+import { AiOutlineSearch, AiOutlineMenu } from 'react-icons/ai';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 import '../styles/Header.css';
 
 const Header = () => (
   <header>
-    <div>
-      <button type="button">Menu</button>
+    <div className="">
+      <button type="button"><AiOutlineMenu /></button>
       <div>
-        <button type="button">Opções de entrega</button>
+        <button type="button">Opções de entrega <MdKeyboardArrowDown /></button>
         <h5>Insira um endereço aqui...</h5>
       </div>
     </div>
